@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internal CSS</title>
+    <title>Typography Principles</title>
     <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
     <style>
       body {
@@ -17,11 +17,40 @@
       }
       p {
         font-size: 24px;
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
       }
       h2 {
         color: darkmagenta;
         background-color: khaki;
         font-style: italic;
+      }
+      nav ul li {
+        margin: 10px;
+        font-size: 20px;
+        display: inline-block;
+      }
+      nav .nav-link {
+        padding: 5px;
+        margin: 4px;
+        border: 2px solid black;
+        background-color: #191970;
+        color: #f5f5ff;
+      }
+      div {
+        background-color: whitesmoke;
+        height: 180px;
+        width: auto;
+      }
+      #styled-by-id {
+        font-family: Georgia, "Cambria", serif;
+        font-weight: bold;
+      }
+      span {
+        background-color: #222222;
+        color: rgb(185, 185, 227);
+        font-style: italic;
+        padding: 2px 5px;
       }
     </style>
   </head>
@@ -49,25 +78,28 @@
           </li>
         </ul>
       </nav>
-      <h1>Internal CSS</h1>
+      <h1>Typography Principles</h1>
     </header>
     <main>
-      <p></p>
-      <p>
-        This paragraph will show the effects of adding internal CSS.<br />
-        The other paragraphs will show the effects of inline CSS.
-      </p>
-      <p style="color: indigo; font-size: 28px; font-weight: bolder">
-        Name: Amanda
-      </p>
-      <p
-        style="
-          color: midnightblue;
-          text-align: right;
-          text-decoration-line: underline;
-        ">
-        Web Development
-      </p>
+      <section>
+        <div>
+          <p>
+            This paragraph will show the effects of adding internal CSS.<br />
+            The other paragraphs will show the effects of inline CSS.
+          </p>
+          <p style="color: indigo; font-size: 28px; font-weight: bold">
+            Name: Amanda
+          </p>
+          <p
+            style="
+              color: midnightblue;
+              text-align: right;
+              text-decoration-line: underline;
+            ">
+            Web Development
+          </p>
+        </div>
+      </section>
       <h2>Web Development</h2>
       <p>
         My favorite part of this class is how we learn more and<br />
@@ -82,6 +114,10 @@
       <p>My favorite part of this class is the kahoots.</p>
       <p>
         My least favorite part is trying to stay awake during presentations.
+      </p>
+      <p id="styled-by-id">
+        This paragraph will show the effect of giving an element an ID and
+        <span>styling</span>that ID.
       </p>
     </main>
     <footer></footer>
