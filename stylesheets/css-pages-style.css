@@ -1,1 +1,15 @@
-
+html {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+body {
+  background-color: ghostwhite;
+  color: #291541;
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
